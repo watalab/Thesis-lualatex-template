@@ -1,0 +1,48 @@
+\documentclass[a4paper, fleqn, report]{ltjsbook}
+
+% プリアンブル
+\input{preamble}
+
+\begin{document}
+
+\maketitle
+
+
+%% 目次
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subfile{guide.tex}
+
+\subfile{introduction.tex}
+\printbibliography[title=参考文献]
+
+\subfile{solution.tex}
+\printbibliography[title=参考文献]
+
+\subfile{DA.tex}
+\printbibliography[title=参考文献]
+
+\subfile{result.tex}
+\include{conclusion}
+
+\section*{謝辞}
+
+%% reference
+% bibtex
+%\bibliographystyle{aiaa} 
+%\bibliographystyle{junsrt}
+%\bibliography{mybib}
+
+% biblatex
+%\printbibliography[title=References]
+
+\appendix
+\subfile{tikz.tex}
+
+\end{document}
+
