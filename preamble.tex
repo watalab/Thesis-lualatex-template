@@ -1,6 +1,11 @@
 %% biblatex
-\usepackage[style=phys, biblabel=brackets, backend=biber, refsection=chapter]{biblatex}
+% 著者名＋年号，参考文献を章ごとに表示 refsection=chapter 後方参照backref=ttue
+\usepackage[style=numeric,  backend=biber, backref=true, refsection=chapter]{biblatex}
+% 参考文献を章ごとに表示 refsection=chapter，後方参照backref=ttue
+%\usepackage[style=phys, biblabel=brackets, backend=biber, backref=true, refsection=chapter]{biblatex}
+% 参考文献を一括で表示する場合
 %\usepackage[style=phys, biblabel=brackets, backend=biber,]{biblatex}
+
 \addbibresource{mybib.bib}
 %% biblatex
 
@@ -106,10 +111,15 @@ urlcolor=blue, citecolor=blue]{hyperref}
 \begin{titlepage}
  \null \vskip3em% ページ上部の空白t
  \begin{center}
-  {\Large 福井大学大学院工学研究科\\安全社会基盤工学専攻原子力安全工学コース\\修士学位論文} \vskip5em
+
+  {\huge 学位論文（修士）}  \vskip 2em
+
   {\Huge ベイズ推定を用いたゆで卵の加熱時間の最適化に関する研究} \vskip25em
   {\Large 2025年2月} \vskip1.5em
-  {\Large 学籍番号XX  　　XX　XX} \vskip1.5em
+  
+    {\Large 福井大学大学院工学研究科\\安全社会基盤工学専攻原子力安全工学コース}  \vskip1.5em
+    
+  {\huge ホゲ　ホゲたろう}
   %   {\LARGE  } \vskip2em
  \end{center}%
 \end{titlepage}}

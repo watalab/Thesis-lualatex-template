@@ -19,13 +19,19 @@
 \subfile{guide.tex}
 
 \subfile{introduction.tex}
-\printbibliography[title=参考文献]
+% 参考文献一覧を章として表示するが，目次には入れない（デフォルト）
+\printbibliography[title={第\thechapter 章の参考文献}]
+% 参考文献一覧をsection扱いにして，目次に入れるときは heading=subbibintoc
+%\printbibliography[title={第{\thechapter}章の参考文献}, heading=subbibintoc]
+% 参考文献一覧をsection扱いにして，目次には入れない。
+%\printbibliography[title={第{\thechapter}章の参考文献}, heading=subbibliography]
+
 
 \subfile{solution.tex}
-\printbibliography[title=参考文献]
+\printbibliography[title={第{\thechapter}章の参考文献}]
 
 \subfile{DA.tex}
-\printbibliography[title=参考文献]
+\printbibliography[title={第{\thechapter}章の参考文献}]
 
 \subfile{result.tex}
 \include{conclusion}
